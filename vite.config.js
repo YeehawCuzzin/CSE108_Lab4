@@ -1,12 +1,7 @@
-import { defineConfig } from 'vite';
-import plugin from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [plugin()],
-    base: "/CSE108_Lab4/",
-    server: {
-        port: 63520,
-    }
-
+  plugins: [react()],
+  base: "/CSE108_Lab4/",
 })
