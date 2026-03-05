@@ -2,7 +2,8 @@
 
 Simple calculator built for **CSE108** using **React + Vite** and deployed with **GitHub Pages**.
 
-Live site:
+## Live Site
+
 https://yeehawcuzzin.github.io/CSE108_Lab4/
 
 ## Features
@@ -18,23 +19,30 @@ https://yeehawcuzzin.github.io/CSE108_Lab4/
 * React
 * Vite
 * Material UI
-* GitHub Pages (via GitHub Actions)
+* GitHub Pages (GitHub Actions deployment)
 
-## Run locally
+## Run Locally (WSL / Ubuntu)
 
-```
+```bash
+cd /mnt/c/Users/Krish/Downloads
+unzip CSE108_Lab4-main.zip
+cd CSE108_Lab4-main
 npm install
 npm run dev
 ```
 
+Open the **Local** URL printed in the terminal (usually):
+
+```
+http://localhost:5173/
+```
+
 ## Notes
 
-* `vite.config.js` uses
+`vite.config.js` uses:
 
 ```
 base: "/CSE108_Lab4/"
 ```
 
-for GitHub Pages deployment.
-
-* Auto deploy handled by `.github/workflows/deploy.yml`.
+so the project works correctly when deployed to GitHub Pages.
