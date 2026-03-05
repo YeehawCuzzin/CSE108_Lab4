@@ -1,16 +1,40 @@
-# React + Vite
+# CSE108 Lab 4 – React Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple calculator built for **CSE108** using **React + Vite** and deployed with **GitHub Pages**.
 
-Currently, two official plugins are available:
+Live site:
+https://yeehawcuzzin.github.io/CSE108_Lab4/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+* Basic operations (+ − × ÷)
+* Decimal input
+* Repeated equals behavior
+* Operator highlighting
+* Clear button
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech
 
-## Expanding the ESLint configuration
+* React
+* Vite
+* Material UI
+* GitHub Pages (via GitHub Actions)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run locally
+
+```
+npm install
+npm run dev
+```
+
+## Notes
+
+* `vite.config.js` uses
+
+```
+base: "/CSE108_Lab4/"
+```
+
+for GitHub Pages deployment.
+
+* Auto deploy handled by `.github/workflows/deploy.yml`.
